@@ -63,3 +63,12 @@ F12::
     Sleep RandomTimeDelay
 }
 
+
+Enter::
+{
+    global KeyEnterPressed
+    KeyEnterPressed := ~KeyEnterPressed
+
+    Send "{Enter}"
+}
+
