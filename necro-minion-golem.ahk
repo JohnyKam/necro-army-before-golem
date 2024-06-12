@@ -36,3 +36,30 @@ F12::
     ExitApp 
 }
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Key bindings and actions
+
+; Key3 - Golem
+3::
+{
+    global KeyEnterPressed
+
+    RandomTimeDelay := Random(100, 150)
+
+    if (!KeyEnterPressed)
+    {
+        OutputDebug("Army of the Dead " RandomTimeDelay)
+        ; Cast Army of the Dead
+        Send "{" Key4 "}"
+        Sleep RandomTimeDelay
+
+    }
+
+    RandomTimeDelay := Random(100, 150)
+    OutputDebug("Golem " RandomTimeDelay)
+    ; Use the Golem
+    Send "{" Key3 "}"
+    Sleep RandomTimeDelay
+}
+
