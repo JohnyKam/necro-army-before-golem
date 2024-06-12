@@ -71,4 +71,45 @@ Enter::
 
     Send "{Enter}"
 }
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Other functions
+
+AutoSuspendScrip()
+{
+    Try
+    {
+        WindowMatch := WinGetTitle("A")
+
+        WindowMatch := InStr(WindowMatch, "Diablo")
+    }
+    catch
+    {
+        WindowMatch := False
+    }
+
+    ;OutputDebug("Windows match:" WindowMatch)
+    OutputDebug("Windows match:" WindowMatch)
+    if (WindowMatch)
+    {
+        ;OutputDebug("Enable script")
+        Suspend False
+    }
+    else
+    {
+        ;OutputDebug("Suspending script")
+        Suspend True
+    }
+
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Other functions/tasks running in the background
+
+;; Disable the script when Diablo is not in focus
+SetTimer AutoSuspendScrip, 250
+
+;OutputDebug("Script started" WindowMatch)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; End of script
+
 
