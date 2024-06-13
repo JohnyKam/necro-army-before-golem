@@ -27,7 +27,7 @@
 
 * Please download and install [AutoHotkey v.2.0](https://www.autohotkey.com) before use
 * Launch script file. It will run in background.
-* In Diablo IV set secondary key binds for numlock keys
+* In Diablo IV set secondary key binds for numpad keys
   - skill 1: numpad 1
   - skill 2: numpad 2
   - skill 3: numpad 3
