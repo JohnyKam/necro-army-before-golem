@@ -31,6 +31,7 @@ F8::
     Reload
 }
 
+; Exits/close the script
 F12::
 {
     ExitApp 
@@ -74,6 +75,44 @@ Enter::
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Other functions
 
+
+; alt + 1 = Numpad1
+!1::
+{
+    Send "{Numpad1}"
+}
+
+; alt + 2 = Numpad2
+!2::
+{
+    Send "{Numpad2}"
+}
+
+; alt + 3 = Numpad3
+!3::
+{
+    Send "{Numpad3}"
+}
+
+; alt + 4 = Numpad4
+!4::
+{
+    Send "{Numpad4}"
+}
+
+
+/*
+    AutoSuspendScrip()
+
+    This function checks if the active window title contains the word "Diablo". 
+    If it does, the script is enabled, otherwise it is suspended.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+*/
 AutoSuspendScrip()
 {
     Try
@@ -111,5 +150,3 @@ SetTimer AutoSuspendScrip, 250
 ;OutputDebug("Script started" WindowMatch)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; End of script
-
-
