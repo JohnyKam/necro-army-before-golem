@@ -41,7 +41,25 @@ F12::
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Key bindings and actions
 
-; Key3 - Golem
+; Key2 - Corpse Tendrils and Raise Skeleton
+2:: 
+{
+    RandomTimeDelay := Random(100, 150)
+
+    OutputDebug("Corpse Tendrils " RandomTimeDelay)
+    ; Cast Corpse Tendrils
+    Send "{" Key2 "}"
+    Sleep RandomTimeDelay
+
+    RandomTimeDelay := Random(100, 150)
+
+    OutputDebug("Raise Skeleton " RandomTimeDelay)
+    ; Cast Raise Skeleton
+    Send "{" Key1 "}"
+    Sleep RandomTimeDelay
+}
+
+; Key3 - Golem and Army of the Dead
 3::
 {
     global KeyEnterPressed
