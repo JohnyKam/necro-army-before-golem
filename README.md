@@ -20,8 +20,8 @@
 
 ## Key features
 
-* Cast Army of the Dead before Golem
-
+* Cast Army of the Dead before Golem (key 3)
+* Cast Corpse Tendrils and Raise Skeleton (key 2)
 
 ## How to use
 
