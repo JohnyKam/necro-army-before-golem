@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 
-#Include %A_ScriptDir%/d4-base-ahk/D4Base.ahk
+#Include %A_ScriptDir%\d4-base-ahk\D4Base.ahk
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Key bindings
 
