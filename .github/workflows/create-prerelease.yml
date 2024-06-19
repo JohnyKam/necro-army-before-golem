@@ -6,7 +6,7 @@ on:
   # Trigger the workflow on tag: vx.x.x
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+.rc-[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+.-rc[0-9]+'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
