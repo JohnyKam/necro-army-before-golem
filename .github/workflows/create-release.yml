@@ -32,7 +32,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         run: |
           git submodule update --init --recursive
-          ls -lah
-          ls -lah d4-base-ahk
           ./d4-base-ahk/.github-scripts/release.sh
-          ls -lah
