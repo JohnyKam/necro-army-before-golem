@@ -25,6 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Check local files
         run: |
+          git submodule update --init --recursive
           ls -lah
           ls -lah d4-base-ahk
 
