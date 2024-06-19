@@ -1,0 +1,3 @@
+[submodule "d4-base-ahk"]
+	path = d4-base-ahk
+	url = https://github.com/JohnyKam/d4-base-ahk.git
